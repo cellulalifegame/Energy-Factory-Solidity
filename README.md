@@ -1,6 +1,4 @@
 # Cellula Solidity
-
-- [Cellula Solidity](#cellula-solidity)
 - [1. Project Overview](#1-project-overview)
   * [1.1 Project Background](#11-project-background)
   * [1.2 Project Objectives](#12-project-objectives)
