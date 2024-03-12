@@ -57,12 +57,12 @@ GitHub: https://github.com/transmissions11/VRGDAS
 4. BitCells can be sold in groups, with each group independently minted for sale.
 5. Users can lease BitCells without permission and only need to pay the minting fee to use them.
 6. The currently set parameters are as follows:
-- **Target price (`targetPrice_`)**: The initial price per cell is 0.0001.
-- **Price decay percentage (`priceDecayPercent_`)**: If there are no successful auctions within a day, the price decays by 10%.
-- **Expected sales quantity per day (`perTimeUnit_`)**: It is estimated that 511 cells will be sold per day.
-- **Auction start time (`startTime_`)**: The starting timestamp of the auction.
-- **Max sellable quantity for this auction round (`maxSellable_`)**: There are a total of 511 cells available for sale in this auction.
-- **Starting TokenID for this auction round (`startTokenID_`)**: The starting TokenID for this auction is the TokenID from the previous auction.
+- Target price (targetPrice_): The initial price per cell is 0.0001.
+- Price decay percentage (priceDecayPercent_): If there are no successful auctions within a day, the price decays by 10%.
+- Expected sales quantity per day (perTimeUnit_): It is estimated that 511 cells will be sold per day.
+- Auction start time (startTime_): The starting timestamp of the auction.
+- Max sellable quantity for this auction round (maxSellable_): There are a total of 511 cells available for sale in this auction.
+- Starting TokenID for this auction round (startTokenID_): The starting TokenID for this auction is the TokenID from the previous auction.
 7. Please ensure that the auction range does not overlap with other TokenIDs.
 ### 2.4.2 BitLife Issuance
 1. Each BitLife NFT requires a combination of 2 to 9 BitCells to be minted.
@@ -105,18 +105,18 @@ GitHub: https://github.com/transmissions11/VRGDAS
 ## 3.1 Main modules
 ## 3.2 Interface description
 ### 3.2.1 CellGame.sol
-- Set BitLife synthesis rule configuration: setLifeCreationConfigused to implement the main functionality of the VRGDA issuance mechanism.
-- Get the current rental price of BitCell: getCellRentPrice used to retrieve the leasing fee when synthesizing BitLife using BitCell.
-- Get the current price of the corresponding BitLife: getLifePrice used to obtain the total leasing fee required when synthesizing BitLife using multiple BitCells.
-- Withdraw interface: withdraw interface for the contract owner to extract funds.
-- Synthesize BitLife: createLife generate a new BitLife NFT.
-- Get the current auction price of BitCell: getCurrentVRGDAPrice can retrieve the current price of Minted BitCell, even after all BitCell Mints have ended.
-- Create an auction: addNewAuction create a BitCell auction, using VRGDA to auction the minting fee of BitCell. It includes the target price for each BitCell, price decay factor, expected daily sales volume, auction start timestamp, number of auctions in this round, and starting Token ID.
-- Mint BitCell: mintFromAuctionmint a new BitCell NFT.
-- Withdraw rent fee share: withdrawRentFee BitCell holders can withdraw their share of the minting fee.
-- Check rent fee share:getWithdrawRentFeecheck the minting fee earnings available for withdrawal by BitCell holders.
-- Withdraw developer fee: withdrawDevFeeentry point for developers to withdraw the minting fee portion belonging to them.
-- Get BitCell details: getCellGene retrieve detailed information about a BitCell based on the Token ID, including the gene sequence, birth block height, number of live cells at birth, birth timestamp, rental count, and birth price.
+- **Set BitLife synthesis rule configuration: `setLifeCreationConfig`** used to implement the main functionality of the VRGDA issuance mechanism.
+- **Get the current rental price of BitCell: `getCellRentPrice`** used to retrieve the leasing fee when synthesizing BitLife using BitCell.
+- **Get the current price of the corresponding BitLife: `getLifePrice`** used to obtain the total leasing fee required when synthesizing BitLife using multiple BitCells.
+- **Withdraw interface: `withdraw`** interface for the contract owner to extract funds.
+- **Synthesize BitLife: `createLife`** generate a new BitLife NFT.
+- **Get the current auction price of BitCell: `getCurrentVRGDAPrice`** can retrieve the current price of Minted BitCell, even after all BitCell Mints have ended.
+- **Create an auction: `addNewAuction`** create a BitCell auction, using VRGDA to auction the minting fee of BitCell. It includes the target price for each BitCell, price decay factor, expected daily sales volume, auction start timestamp, number of auctions in this round, and starting Token ID.
+- **Mint BitCell: `mintFromAuctionmint`** a new BitCell NFT.
+- **Withdraw rent fee share: `withdrawRentFee`** BitCell holders can withdraw their share of the minting fee.
+- **Check rent fee share:`getWithdrawRentFeecheck`** the minting fee earnings available for withdrawal by BitCell holders.
+- **Withdraw developer fee: `withdrawDevFeeentry`** point for developers to withdraw the minting fee portion belonging to them.
+- **Get BitCell details: `getCellGene`** retrieve detailed information about a BitCell based on the Token ID, including the gene sequence, birth block height, number of live cells at birth, birth timestamp, rental count, and birth price.
 ### 3.2.2 Life.sol
 - Synthesize BitLife (callable only by the Cell contract): createLifeGenerate a new BitLife NFT, restricted to be called only by the CellGame.sol contract.
 - Set feeding price: changeFoodPriceSet the price of food, allowing different prices for different durations. Currently, food is available for 1 day, 3 days, and 7 days.
