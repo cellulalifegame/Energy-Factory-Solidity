@@ -103,6 +103,11 @@ GitHub: https://github.com/transmissions11/VRGDAS
 3. Liquidity Pool
 # 3. Technical architecture
 ## 3.1 Main modules
+The contract structure is primarily divided into four contracts, each responsible for different duties:
+- cellgame.sol: Mainly responsible for the issuance of BitCell
+- life.sol: Issuance of BitLife
+- energy.sol: Collection of user's energy earnings
+- helps.sol: Internally stores contract-related structures
 ## 3.2 Interface description
 ### 3.2.1 CellGame.sol
 - **Set BitLife synthesis rule configuration: `setLifeCreationConfig`** used to implement the main functionality of the VRGDA issuance mechanism.
@@ -118,15 +123,15 @@ GitHub: https://github.com/transmissions11/VRGDAS
 - **Withdraw developer fee: `withdrawDevFeeentry`** point for developers to withdraw the minting fee portion belonging to them.
 - **Get BitCell details: `getCellGene`** retrieve detailed information about a BitCell based on the Token ID, including the gene sequence, birth block height, number of live cells at birth, birth timestamp, rental count, and birth price.
 ### 3.2.2 Life.sol
-- Synthesize BitLife (callable only by the Cell contract): createLifeGenerate a new BitLife NFT, restricted to be called only by the CellGame.sol contract.
-- Set feeding price: changeFoodPriceSet the price of food, allowing different prices for different durations. Currently, food is available for 1 day, 3 days, and 7 days.
-- Purchase food: buyFood Users can buy food at different prices, requiring payment from the user during the process.
-- Get BitLife details:getLifeGene Retrieve detailed information about a BitLife based on the Token ID, including the gene sequence, birth block height, number of live cells at birth, birth timestamp, rental count, birth price, work deadline, and which BitCells are being used.
-- Get BitLife gene sequence: getGenesSequence Part of the BitLife details, used to obtain the gene sequence of a BitLife.
-- Get BitLife gene array:decodeGenes Part of the BitLife details, used to decode the gene sequence of a BitLife into an array format.
-- Check if center cell is alive:  isCenterCellAliveGiven a set of coordinates, determine if the cell at that location will remain alive in the next evolution.
+- **Synthesize BitLife (callable only by the Cell contract): `createLife`** Generate a new BitLife NFT, restricted to be called only by the CellGame.sol contract.
+- **Set feeding price: `changeFoodPriceSet`** the price of food, allowing different prices for different durations. Currently, food is available for 1 day, 3 days, and 7 days.
+- **Purchase food: `buyFood`** Users can buy food at different prices, requiring payment from the user during the process.
+- **Get BitLife details:`getLifeGene`** Retrieve detailed information about a BitLife based on the Token ID, including the gene sequence, birth block height, number of live cells at birth, birth timestamp, rental count, birth price, work deadline, and which BitCells are being used.
+- **Get BitLife gene sequence: `getGenesSequence`** Part of the BitLife details, used to obtain the gene sequence of a BitLife.
+- **Get BitLife gene array:`decodeGenes`** Part of the BitLife details, used to decode the gene sequence of a BitLife into an array format.
+- Check if center cell is alive:  `isCenterCellAliveGiven`** a set of coordinates, determine if the cell at that location will remain alive in the next evolution.
 ### 3.2.3 Energy.sol
-Send energy claim request: sendClaimEnergyRequest  - Records the event of a user requesting to claim energy.
+**Send energy claim request: `sendClaimEnergyRequest`**  - Records the event of a user requesting to claim energy.
 ### 3.2.4 Helps.sol
 Structures storing contract-related information internally.
 ## 3.3 The data flow diagram is as follows
@@ -143,7 +148,7 @@ The front-end framework used is Vue 3 + TypeScript. Here are the key components 
 7. Mobile responsiveness: Implemented using amfe-flexible and postcss-pxtorem for mobile adaptation solution.
 ## 3.5 Environment and Tools.
 1. To develop this project, please ensure that your development environment meets the following requirements: Install Foundry.
-2. To configure your local environment, follow these steps: forge build.
+2. **To configure your local environment, follow these steps: `forge build`**.
 3. The code for this project is hosted on GitHub. You can access the code at [https://github.com/cellulalifegame/Energy-Factory-Solidity].
 # 4. Testing related information
 1. Operating System: No specific requirements.
