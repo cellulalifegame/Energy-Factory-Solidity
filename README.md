@@ -154,3 +154,7 @@ The front-end framework used is Vue 3 + TypeScript. Here are the key components 
 1. Operating System: No specific requirements.
 2. Browser: Install MetaMask.
 3. Software Environment: No specific requirements.
+- forge-std
+- openzeppelin-contracts
+- openzeppelin-contracts-upgradeable
+- solmate
