@@ -47,7 +47,7 @@ Using the VRGDA method, we will auction the two types of NFTs: BitCell with a fi
 ![avatar](images/vrgda.PNG)
 ![avatar](images/parameters.PNG)
 ### Here are the definitions for reference:
-Parameter Definitions Reference: Variable Rate GDAs（https://www.paradigm.xyz/2022/08/vrgda）
+Parameter Definitions Reference: Variable Rate GDAs（https://www.paradigm.xyz/2022/08/vrgda）  
 GitHub: https://github.com/transmissions11/VRGDAS
 ## 2.4  Logical Components
 ### 2.4.1 BitCell Issuance
