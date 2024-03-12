@@ -34,7 +34,7 @@ Most discussions about Full-onChain Games focus on their future prospects. Howev
 Cellula has currently developed an asset-based permissionless gaming mechanism that aims to provide a groundbreaking gaming experience and innovative asset distribution method for both crypto gamers and traditional gamers. By combining the rules of Conway's Game of Life with the VRGDA distribution mechanism, Cellula introduces new concepts and possibilities for players in Web2 and Web2.5 games. 
 # 2. Product Requirements
 ## 2.1 Core Algorithm
-1. Implementing NFT issuance pricing based on the Variable Rate Gradual Dutch Auction mechanism.（https://www.paradigm.xyz/2022/08/vrgda）
+1. Implementing NFT issuance pricing based on the Variable Rate Gradual Dutch Auction mechanism.（https://www.paradigm.xyz/2022/08/vrgda ） 
 2. Achieving the effect of a gradual Dutch auction through a customizable token issuance model: when market demand exceeds expectations, the price increases; conversely, when market demand falls below expectations, the price decreases; and when market demand aligns with expectations, the price remains constant.
 ## 2.2 Issuance Mechanism
 1. We have issued two types of NFTs: BitCell and BitLife.
@@ -47,7 +47,7 @@ Using the VRGDA method, we will auction the two types of NFTs: BitCell with a fi
 ![avatar](images/vrgda.PNG)
 ![avatar](images/parameters.PNG)
 ### Here are the definitions for reference:
-Parameter Definitions Reference: Variable Rate GDAs（https://www.paradigm.xyz/2022/08/vrgda）  
+Parameter Definitions Reference: Variable Rate GDAs（https://www.paradigm.xyz/2022/08/vrgda ）  
 GitHub: https://github.com/transmissions11/VRGDAS
 ## 2.4  Logical Components
 ### 2.4.1 BitCell Issuance
