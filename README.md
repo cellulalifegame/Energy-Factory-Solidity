@@ -129,7 +129,7 @@ The contract structure is primarily divided into four contracts, each responsibl
 - **Get BitLife details:`getLifeGene`** Retrieve detailed information about a BitLife based on the Token ID, including the gene sequence, birth block height, number of live cells at birth, birth timestamp, rental count, birth price, work deadline, and which BitCells are being used.
 - **Get BitLife gene sequence: `getGenesSequence`** Part of the BitLife details, used to obtain the gene sequence of a BitLife.
 - **Get BitLife gene array:`decodeGenes`** Part of the BitLife details, used to decode the gene sequence of a BitLife into an array format.
-- Check if center cell is alive:  `isCenterCellAliveGiven`** a set of coordinates, determine if the cell at that location will remain alive in the next evolution.
+- **Check if center cell is alive:  `isCenterCellAlive`** Given a set of coordinates, determine if the cell at that location will remain alive in the next evolution.
 ### 3.2.3 Energy.sol
 **Send energy claim request: `sendClaimEnergyRequest`**  - Records the event of a user requesting to claim energy.
 ### 3.2.4 Helps.sol
