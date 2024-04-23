@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "claimTime",
+						"type": "uint256"
+					}
+				],
+				"name": "ClaimEnergy",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "sendClaimEnergyRequest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/Energy.sol": "Energy"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": [
+			":@openzeppelin/contracts-upgradeable=lib/openzeppelin-contracts-upgradeable/contracts/",
+			":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+			":VRGDAs/=lib/VRGDAs/src/",
+			":solmate/=lib/solmate/src/"
+		]
+	},
+	"sources": {
+		"src/Energy.sol": {
+			"keccak256": "0xca054d01d91f3d8062b67e88d3dcff7e7980e873ac2addfe16f1789af6a0ef1b",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://f0bb84bcac3162f20ab0093796be47e63414c8a7b684964024eff6569808295c",
+				"dweb:/ipfs/QmUHmjCNJruW7JNjV9tCbP3FA8J3wHom5ddFzqE1tehD6H"
+			]
+		}
+	},
+	"version": 1
+}

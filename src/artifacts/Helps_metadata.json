@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/Helps.sol": "Helps"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": [
+			":@openzeppelin/contracts-upgradeable=lib/openzeppelin-contracts-upgradeable/contracts/",
+			":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+			":VRGDAs/=lib/VRGDAs/src/",
+			":solmate/=lib/solmate/src/"
+		]
+	},
+	"sources": {
+		"src/Helps.sol": {
+			"keccak256": "0xf0298f00db3d1696435a2820103884f90ad4012fb04d26cd09658f2d92fb89f8",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://571986d43a7b29ca6d47c622fde8376a79d9d1d6763edc0013fa6db98cbb6dae",
+				"dweb:/ipfs/QmZE7bHKe4ZD6iN88mFpmMM52E2vVGK1fGWCiQbWRgfxtD"
+			]
+		},
+		"src/lib/BitMap.sol": {
+			"keccak256": "0x48b2d9d9d3f90d10079bc5175707b0a2e12a0a67785a1ebd59b1bd58e475661a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e68e9c6709ce452155f47c3bab8f17c5ce7b879efcf85c3f45c905e62dc53022",
+				"dweb:/ipfs/QmTbqFYBixBYt3FoZkFVx9yyX3axMir2fyGEyiB4yT8NSi"
+			]
+		}
+	},
+	"version": 1
+}
